@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  @apply bg-ink text-mist font-body antialiased;
+}
+
+::selection {
+  @apply bg-leaf/40 text-white;
+}
+
+/* Consistent, visible keyboard focus everywhere */
+:focus-visible {
+  outline: 2px solid theme("colors.leaf.bright");
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Flowing-line motif used in the hero background */
+@keyframes flow-dash {
+  to {
+    stroke-dashoffset: -240;
+  }
+}
+.flow-line {
+  stroke-dasharray: 14 26;
+  animation: flow-dash 6s linear infinite;
+}
+.flow-line-slow {
+  stroke-dasharray: 6 34;
+  animation: flow-dash 11s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .flow-line,
+  .flow-line-slow {
+    animation: none;
+  }
+}
+
+@layer components {
+  .wrap {
+    @apply mx-auto w-full max-w-wrap px-5 sm:px-8;
+  }
+  .eyebrow {
+    @apply font-mono text-xs uppercase tracking-[0.2em] text-leaf-bright;
+  }
+  .card {
+    @apply rounded-xl border border-edge bg-panel p-5 sm:p-6;
+  }
+  .chip-btn {
+    @apply rounded-full border border-edge px-4 py-1.5 font-mono text-sm text-fog transition-colors hover:border-leaf hover:text-mist;
+  }
+  .chip-btn-active {
+    @apply border-leaf bg-leaf/15 text-leaf-bright;
+  }
+}
