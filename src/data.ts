@@ -22,11 +22,11 @@ export const identity = {
   projectTitle: "Off-Grid Mobile Irrigation for Sub-Saharan Africa",
   positioning:
     "A low-cost, solar-powered mobile irrigation system designed to buffer smallholder crops against dry spells in Sub-Saharan Africa.",
-  // Contact placeholders — replace with real links before publishing.
   links: {
-    email: "mailto:REPLACE_ME@example.com",
+    email: "mailto:jwtm2004@gmail.com",
+    // TODO: replace with your real LinkedIn profile URL
     linkedin: "https://www.linkedin.com/in/REPLACE_ME",
-    github: "https://github.com/REPLACE_ME",
+    github: "https://github.com/jwtm2004/aftrak-irrigation-portfolio",
   },
 };
 
