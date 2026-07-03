@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { identity, outletConfigs, costs } from "../../data";
+import { identity, outletConfigs, costs, assets } from "../../data";
 
 const selected = outletConfigs.find((c) => c.selected)!;
 
@@ -104,7 +104,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="mt-14"
+          className="mt-14 flex flex-wrap items-center gap-4"
         >
           <a
             href="#problem"
@@ -118,6 +118,15 @@ export default function Hero() {
             >
               ↓
             </motion.span>
+          </a>
+          <a
+            href={assets.report.path}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-edge px-6 py-3 font-display text-sm font-semibold text-fog transition-colors hover:border-leaf hover:text-mist"
+          >
+            Read the full report
+            <span aria-hidden className="font-mono text-xs text-fog">PDF ↗</span>
           </a>
         </motion.div>
       </div>

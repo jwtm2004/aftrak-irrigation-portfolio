@@ -1,4 +1,4 @@
-import { identity } from "../../data";
+import { identity, assets } from "../../data";
 
 export default function Footer() {
   return (
@@ -14,11 +14,12 @@ export default function Footer() {
             {identity.supervisor}.
           </p>
         </div>
-        <ul className="flex gap-3">
+        <ul className="flex flex-wrap gap-3">
           {[
             { label: "Email", href: identity.links.email },
             { label: "LinkedIn", href: identity.links.linkedin },
             { label: "GitHub", href: identity.links.github },
+            { label: "Dissertation (PDF)", href: assets.report.path },
           ].map((l) => (
             <li key={l.label}>
               <a

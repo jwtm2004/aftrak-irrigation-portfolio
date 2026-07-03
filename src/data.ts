@@ -24,8 +24,7 @@ export const identity = {
     "A low-cost, solar-powered mobile irrigation system designed to buffer smallholder crops against dry spells in Sub-Saharan Africa.",
   links: {
     email: "mailto:jwtm2004@gmail.com",
-    // TODO: replace with your real LinkedIn profile URL
-    linkedin: "https://www.linkedin.com/in/REPLACE_ME",
+    linkedin: "https://www.linkedin.com/in/joseph-mccarthy-874786213/",
     github: "https://github.com/jwtm2004/aftrak-irrigation-portfolio",
   },
 };
@@ -336,6 +335,10 @@ export const futureWork = [
 /* ------------------------------------------------------------------ */
 
 export const assets = {
+  report: {
+    path: "assets/Joseph-McCarthy-MEng-Dissertation.pdf",
+    label: "Full dissertation report (PDF, 61 pages)",
+  },
   poster: {
     path: "assets/poster.jpg",
     label: "Dissertation poster summarising the project — design, testing and results",
